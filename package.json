@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e2e:parallel3": "npm run e2e -- --parallel 3"
+    "e2e:parallel3": "npm run e2e -- --parallel 3",
+    "e2e": "cucumber-js -f node_modules/cucumber-pretty --tags \"not @TODO\""
   },
   "repository": {
     "type": "git",
