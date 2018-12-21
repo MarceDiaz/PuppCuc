@@ -34,7 +34,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm run e2e -- -p parallel3 -p nocolor  
+      - run:
+        ldd chrome | grep not 
+        cat /etc/os-release  
+        npm run e2e -- -p parallel3 -p nocolor  
 
 
 
