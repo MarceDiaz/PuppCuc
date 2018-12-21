@@ -1,0 +1,43 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "esw \"**/*.js\" --clear",
+    "lint:w": "esw \"**/*.js\" --watch --clear",
+    "lint-fix": "esw \"**/*.js\" --fix",
+    "e2e": "npm run lint && cucumber-js -f node_modules/cucumber-pretty --tags \"not @TODO\"",
+    "e2e:parallel3": "npm run e2e -- --parallel 3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corcoran-Labs/Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Corcoran-Labs/Automation/issues"
+  },
+  "homepage": "https://github.com/Corcoran-Labs/Automation#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-datetime": "^1.5.0",
+    "cucumber": "^5.0.3",
+    "cucumber-pretty": "^1.5.0",
+    "install": "^0.12.2",
+    "moment": "^2.23.0",
+    "npm": "^6.5.0",
+    "puppeteer": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-watch": "^4.0.2"
+  }
+}
