@@ -28,7 +28,8 @@ jobs:
 
       - run: npm install
       - run: pwd
-      - run: ~/repo
+      - run: echo 'module.exports = { citi "cititestinguser@email.ghostinspector.com" } } }' > /home/circleci/repo/myFile.txt
+      - run: cat /home/circleci/repo/myFile.txt 
 
       - save_cache:
           paths:
