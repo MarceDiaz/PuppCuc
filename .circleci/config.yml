@@ -27,8 +27,8 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
-      - run: echo 'module.exports = { citi "cititestinguser@email.ghostinspector.com" } } }' > ~/repo/output/myfile.txt
-      - run: echo ~/repo/output/myfile.txt
+      - run: pwd
+      - run: ~/repo
 
       - save_cache:
           paths:
