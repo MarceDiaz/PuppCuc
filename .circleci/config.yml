@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
-      - run: echo "module.exports = { citi: { CitiRegistratedUser: { user: 'cititestinguser@email.ghostinspector.com', password: 'Password1', email: 'cititestinguser@email.ghostinspector.com' } } }" > ./output/myfile.txt
+      - run: echo "module.exports = { citi\: { CitiRegistratedUser\: { user\: 'cititestinguser@email.ghostinspector.com', password\: 'Password1', email\: 'cititestinguser@email.ghostinspector.com' } } }" > ./output/myfile.txt
 
       - save_cache:
           paths:
