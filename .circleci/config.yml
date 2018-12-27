@@ -39,6 +39,7 @@ jobs:
         
       # run tests!
       - run: cd /home/circleci/repo/
+      - run: ls -l
       - run: npm run e2e -- -p parallel3 -p nocolor -p alwaysScreenshot 
       - run: npm run htmlReport
 
