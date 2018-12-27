@@ -42,5 +42,10 @@ jobs:
       - run: ls -l
       - run: npm run e2e -- -p parallel3 -p nocolor -p alwaysScreenshot -p jsonReport
       - run: npm run htmlReport
+      - run: ls -l
+      - store_artifacts:
+          path: /output/report.html
+          destination: prefix
+
 
 
