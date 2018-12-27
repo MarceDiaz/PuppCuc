@@ -30,7 +30,7 @@ jobs:
       - run: echo $myText
       - run: echo '--------------------------------------------------------'
       - run: echo $myText > /home/circleci/repo/features/myText.txt
-      - run: cat /home/circleci/repo/myText.txt 
+      - run: cat /home/circleci/repo/features/myText.txt 
 
       - save_cache:
           paths:
