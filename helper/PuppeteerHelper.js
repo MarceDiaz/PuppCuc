@@ -1,10 +1,6 @@
 const { params } = require('../features/support/data.js')
 
 class PuppeteerHelper {
-  constructor () {
-    this.output = './output/'
-  }
-
   wrapPage (page) {
     let clickHandler = {
       apply: async (target, thisArg, args) => {
@@ -77,8 +73,12 @@ class PuppeteerHelper {
     throw new Error("Couldn't find " + selector)
   }
 
-  async takeScreenshot (page, name) {
-    await page.screenshot({ path: this.output + name })
+  async takeScreenshot (name, outputFolder, page = this.page) {
+    return page.screenshot({
+      path: outputFolder + name + '.png',
+      type: 'png',
+      fullPage: true
+    })
   }
 
   async isSelectorPresent (page, selector, timeout, retries) {

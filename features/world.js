@@ -5,6 +5,7 @@ const scope = require('./support/data')
 const { setDefaultTimeout } = require('cucumber')
 
 const World = function ({ attach, parameters }) {
+  this.attach = attach
   this.driver = puppeteer
   setDefaultTimeout(6000 * 1000)
 

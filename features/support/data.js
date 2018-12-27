@@ -17,7 +17,9 @@ module.exports = {
   params: {
     headless: 'true',
     env: 'staging',
-    viewport: viewports.desktop
+    viewport: viewports.desktop,
+    output: './output/',
+    screenshotsOn: ['failed']
   },
 
   get citiUrl () {
