@@ -49,7 +49,6 @@ All the previous commands can be mixed and matched. Just remember to add only on
 ## Important
 
 * This version uses [`credentials.js`] file to perform user actions. 
-  If you need it, contact with: marcelo.diaz@corcoran.com, matias.pereyra@corcoran.com or guillermo.maiolo@corcoran.com 
   
   *Where must be placed?* 
   - This file must be placed on the folder [` features/support/ `]
